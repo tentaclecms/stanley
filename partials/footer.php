@@ -9,7 +9,7 @@
                     +34 9054 5455, <br/>
                     Madrid, Spain.
                 </p>
-            </div><!-- /col-lg-4 -->
+            </div>
 
             <div class="col-lg-4">
                 <h4>My Links</h4>
@@ -18,18 +18,18 @@
                     <a href="#">Twitter</a><br/>
                     <a href="#">Facebook</a>
                 </p>
-            </div><!-- /col-lg-4 -->
+            </div>
 
             <div class="col-lg-4">
                 <h4>About Stanley</h4>
                 <p>This cute theme was created to showcase your work in a simple way. Use it wisely.</p>
-            </div><!-- /col-lg-4 -->
+            </div>
 
         </div>
 
     </div>
 </div>
 
-<? theme::script('assets/js/bootstrap.min.js'); ?>
+<? theme::script('assets/js/app.min.js'); ?>
 </body>
 </html>

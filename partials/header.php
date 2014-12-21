@@ -29,12 +29,7 @@
     _/      _/_/_/  _/    _/      _/_/    _/_/_/    _/_/_/  _/    _/_/_/
     ======================================================================-->
 
-    <?
-    theme::script('https://code.jquery.com/jquery-1.10.2.min.js');
-    theme::css('assets/css/main.css');
-    theme::script('assets/js/hover.zoom.js');
-    theme::script('assets/js/hover.zoom.conf.js');
-    ?>
+    <? theme::css('assets/css/main.css'); ?>
 
     <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
