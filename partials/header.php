@@ -38,7 +38,6 @@
     <![endif]-->
 
     <? render_header( ); ?>
-
 </head>
 
 <body <? body_class(); ?>>

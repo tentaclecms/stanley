@@ -1,6 +1,6 @@
-<div id="mc_embed_signup" class="m-bottom-60">
+<div id="mc_embed_signup" class="m-bottom-45">
     <form action="//adampatterson.us1.list-manage.com/subscribe/post?u=c21d0f4a99a90fdf9c412e45a&amp;id=4e9496f057" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
-        <div id="mc_embed_signup_scroll">
+        <div id="mc_embed_signup_scroll" class="row">
             <div class="col-md-8">
                 <div class="form-group">
                     <input type="email" value="" name="EMAIL" placeholder="Your Email" class="form-control required email input-email" id="mce-EMAIL">

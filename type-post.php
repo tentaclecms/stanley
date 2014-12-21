@@ -11,7 +11,7 @@ $author_meta = $author->get_meta( $post->author ); ?>
 		<div class="row">
 			<div class="col-lg-8 col-lg-offset-2">
 				<p><bd><? date::show($post->date) ?></bd></p>
-				<h4><?= $post->title?></h4>
+				<h3><?= $post->title?></h3>
 				<?= the_content( $post->content ); ?>
 				<p><bt>
 					<? foreach( $relations = $tag->get_relations( $post->id ) as $relation ): ?>
