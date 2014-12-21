@@ -1,0 +1,165 @@
+@import "../src/responsive-utilities";
+
+@-ms-viewport {
+  width: device-width;
+}
+
+@media (min-width: @screen-lg-min) { /* Orange */ }
+
+@media (min-width: @screen-md-min) and (max-width: @screen-md-max) { /* Red */ }
+
+@media (min-width: @screen-sm-min) and (max-width: @screen-sm-max) { /* Green */ }
+
+@media (max-width: @screen-xs-max) { /* Purple */ }
+
+@media print {
+  body {
+    margin: 50px 0;
+    line-height: 1.5;
+    font-family: "Helvetica Neue", Arial, Helvetica, sans-serif;
+    color: #000;
+    background: none;
+    font-size: 14pt;
+  }
+  .container {
+    background: none;
+  }
+  hr {
+    background: #ccc;
+    color: #ccc;
+    width: 100%;
+    height: 2px;
+    margin: 2em 0;
+    padding: 0;
+    border: none;
+  }
+  hr.space {
+    background: #fff;
+    color: #fff;
+    visibility: hidden;
+  }
+  h1, h2, h3, h4, h5, h6 {
+    font-family: "Helvetica Neue", Arial, "Lucida Grande", sans-serif;
+  }
+  code {
+    font: .9em "Courier New", Monaco, Courier, monospace;
+  }
+  a:link, a:visited {
+    background: transparent;
+    font-weight: 700;
+    text-decoration: underline;
+  }
+  a:link:after, a:visited:after {
+    content: " (" attr(href) ")";
+    font-size: 90%;
+  }
+
+  article {
+    .make-row();
+
+    section {
+      .make-lg-column(12);
+
+      .span8 {
+        .make-lg-column(12);
+      }
+      .span4 {
+        .make-lg-column(6);
+      }
+    }
+
+    aside {
+      display: none;
+    }
+  }
+
+  footer {
+    display: none;
+  }
+  .page-brake{
+    display: block;
+    height: 150px;
+  }
+  .hide-print {
+    display: none;
+  }
+  .show-print {
+    display: block;
+  }
+
+  * {
+    text-shadow: none !important;
+    color: #000 !important; // Black prints faster: h5bp.com/s
+    background: transparent !important;
+    box-shadow: none !important;
+  }
+
+  a,
+  a:visited {
+    text-decoration: underline;
+  }
+
+  a[href]:after {
+    content: " (" attr(href) ")";
+  }
+
+  abbr[title]:after {
+    content: " (" attr(title) ")";
+  }
+
+  // Don't show links for images, or javascript/internal links
+  a[href^="javascript:"]:after,
+  a[href^="#"]:after {
+    content: "";
+  }
+
+  pre,
+  blockquote {
+    border: 1px solid #999;
+    page-break-inside: avoid;
+  }
+
+  thead {
+    display: table-header-group; // h5bp.com/t
+  }
+
+  tr,
+  img {
+    page-break-inside: avoid;
+  }
+
+  img {
+    max-width: 100% !important;
+  }
+
+  @page {
+    margin: 2cm .5cm;
+  }
+
+  p,
+  h2,
+  h3 {
+    orphans: 3;
+    widows: 3;
+  }
+
+  h2,
+  h3 {
+    page-break-after: avoid;
+  }
+
+  select {
+    background: #fff !important;
+  }
+
+  // Bootstrap components
+  .navbar {
+    display: none;
+  }
+  .btn,
+  .dropup > .btn {
+    > .caret {
+      border-top-color: #000 !important;
+    }
+  }
+}

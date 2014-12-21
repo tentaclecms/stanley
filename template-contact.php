@@ -10,7 +10,7 @@ theme::part('partials/hero') ?>
 	<div class="container pt">
 
 		<div class="row mt">
-			<div class="col-lg-6 col-lg-offset-3 centered">
+			<div class="lg-6 lg-offset-3 centered">
 				<h3>CONTACT ME</h3>
 				<hr>
 				<p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</p>
@@ -18,7 +18,7 @@ theme::part('partials/hero') ?>
 		</div>
 
 		<div class="row mt">	
-			<div class="col-lg-8 col-lg-offset-2">
+			<div class="lg-8 lg-offset-2">
 				<form role="form">
 				  <div class="form-group">
 				    <input type="name" class="form-control" id="NameInputEmail1" placeholder="Your Name">

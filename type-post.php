@@ -9,11 +9,7 @@ $author_meta = $author->get_meta( $post->author ); ?>
 <div id="white">
 	<div class="container">
 		<div class="row">
-			<div class="col-lg-8 col-lg-offset-2">
-				<p>
-					<img src="<?= THEME ?>/assets/img/user.png" width="50px" height="50px">
-					<ba><?= $author_meta->first_name;?> <?= $author_meta->last_name;?></ba>
-				</p>
+			<div class="md-8 md-offset-2">
 				<p><bd><? date::show($post->date) ?></bd></p>
 				<h4><?= $post->title?></h4>
 				<?= the_content( $post->content ); ?>
@@ -23,7 +19,13 @@ $author_meta = $author->get_meta( $post->author ); ?>
 					<? endforeach; ?>
 				</bt></p>
 				<hr>
-				<p><a href="/blog">Back</a></p>
+				<? theme::part('partials/author' ); ?>
+
+				<? theme::part('partials/socials', array( 'title'=>$post->title, 'post'=>$post, 'post_meta'=> $post_meta ) ); ?>
+
+				<?= render_content(); ?>
+
+				<? disqus::comments_form( $post->id ); ?>
 			</div>
 
 		</div>
