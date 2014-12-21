@@ -11,15 +11,6 @@
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
-	"\/assets\/css\/bootstrap.css": {
-		"fileType": 16,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/assets\/css\/bootstrap.css",
-		"outputAbbreviatedPath": "No Output Path",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
-		},
 	"\/assets\/css\/main.css": {
 		"fileType": 16,
 		"ignore": 1,
@@ -161,34 +152,23 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/assets\/js\/bootstrap.min.js": {
+	"\/assets\/js\/app.js": {
 		"fileType": 64,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/assets\/js\/bootstrap.min.js",
-		"outputAbbreviatedPath": "\/assets\/js\/min\/bootstrap.min-min.js",
+		"inputAbbreviatedPath": "\/assets\/js\/app.js",
+		"outputAbbreviatedPath": "\/assets\/js\/app.min.js",
 		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
+		"outputPathIsSetByUser": 1,
 		"outputStyle": 1,
-		"syntaxCheckerStyle": 1
+		"syntaxCheckerStyle": 0
 		},
-	"\/assets\/js\/hover.zoom.conf.js": {
+	"\/assets\/js\/app.min.js": {
 		"fileType": 64,
-		"ignore": 0,
+		"ignore": 1,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/assets\/js\/hover.zoom.conf.js",
-		"outputAbbreviatedPath": "\/assets\/js\/min\/hover.zoom.conf-min.js",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"outputStyle": 1,
-		"syntaxCheckerStyle": 1
-		},
-	"\/assets\/js\/hover.zoom.js": {
-		"fileType": 64,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/assets\/js\/hover.zoom.js",
-		"outputAbbreviatedPath": "\/assets\/js\/min\/hover.zoom-min.js",
+		"inputAbbreviatedPath": "\/assets\/js\/app.min.js",
+		"outputAbbreviatedPath": "\/assets\/js\/min\/app.min-min.js",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 1,
@@ -323,7 +303,7 @@
 		},
 	"\/assets\/vendor\/bootstrap\/dist\/js\/bootstrap.min.js": {
 		"fileType": 64,
-		"ignore": 0,
+		"ignore": 1,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/assets\/vendor\/bootstrap\/dist\/js\/bootstrap.min.js",
 		"outputAbbreviatedPath": "\/assets\/vendor\/bootstrap\/dist\/js\/min\/bootstrap.min-min.js",
@@ -1931,6 +1911,28 @@
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
+	"\/assets\/vendor\/hover.zoom.conf.js": {
+		"fileType": 64,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/assets\/vendor\/hover.zoom.conf.js",
+		"outputAbbreviatedPath": "\/assets\/vendor\/min\/hover.zoom.conf-min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
+		},
+	"\/assets\/vendor\/hover.zoom.js": {
+		"fileType": 64,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/assets\/vendor\/hover.zoom.js",
+		"outputAbbreviatedPath": "\/assets\/vendor\/min\/hover.zoom-min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
+		},
 	"\/assets\/vendor\/jquery\/dist\/jquery.js": {
 		"fileType": 64,
 		"ignore": 0,
@@ -1944,7 +1946,7 @@
 		},
 	"\/assets\/vendor\/jquery\/dist\/jquery.min.js": {
 		"fileType": 64,
-		"ignore": 0,
+		"ignore": 1,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/assets\/vendor\/jquery\/dist\/jquery.min.js",
 		"outputAbbreviatedPath": "\/assets\/vendor\/jquery\/dist\/min\/jquery.min-min.js",
