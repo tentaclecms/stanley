@@ -31,7 +31,6 @@
 
     <?
     theme::script('https://code.jquery.com/jquery-1.10.2.min.js');
-    theme::css('assets/css/bootstrap.css');
     theme::css('assets/css/main.css');
     theme::script('assets/js/hover.zoom.js');
     theme::script('assets/js/hover.zoom.conf.js');

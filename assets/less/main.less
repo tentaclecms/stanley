@@ -7,6 +7,35 @@
  * URL: http://blacktie.co
  */
 
+@import "bootstrap";
+@import "_structure";
+/*
+.xs-center {
+  margin: 0 auto;
+  float: none;
+}
+
+@media (min-width: @screen-sm-min) {
+  .sm-center {
+    margin: 0 auto;
+    float: none;
+  }
+}
+
+@media (min-width: @screen-sm-min) {
+  .sm-center {
+    margin: 0 auto;
+    float: none;
+  }
+}
+
+@media (min-width: @screen-lg-min) {
+  .lg-center {
+    margin: 0 auto;
+    float: none;
+  }
+}
+*/
 @import url(http://fonts.googleapis.com/css?family=Montserrat:400,700);
 
 body {
@@ -239,4 +268,56 @@ bt {
 .glyphicon {
   font-size: 40px;
   color: #1abc9c;
+}
+
+#socials {
+  .btn-share {
+    height: 50px;
+    position: relative;
+    display: block;
+    color: #ffffff;
+    text-decoration: none;
+    text-align: center;
+    line-height: 52px;
+    border-bottom-width: 3px;
+    border-bottom-style: solid;
+    &:hover,
+    &:active {
+      border-bottom: none;
+      margin-top: 3px;
+      margin-bottom: -3px;
+    }
+  }
+  .btn-facebook {
+    background-color: #3B5998;
+    border-bottom-color: darken(#3B5998, 10%);
+  }
+  .btn-pinterest {
+    background-color: #CC2127;
+    border-bottom-color: darken(#CC2127, 10%);
+  }
+  .btn-twitter {
+    background-color: #55ACEE;
+    border-bottom-color: darken(#55ACEE, 10%);
+  }
+  .btn-google-plus {
+    background-color: #DD4B39;
+    border-bottom-color: darken(#DD4B39, 10%);
+  }
+  .btn-stumbleupon {
+    background-color: #EB4924;
+    border-bottom-color: darken(#EB4924, 10%);
+  }
+  .btn-reddit {
+    background-color: #006697;
+    border-bottom-color: darken(#006697, 10%);
+  }
+  .btn-comments {
+    background-color: #43A943;
+    border-bottom-color: darken(#43A943, 10%);
+  }
+}
+
+.hide-screen, .show-print {
+  display: none;
 }
