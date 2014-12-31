@@ -1,5 +1,5 @@
 <section class="author row m-top-45">
-    <figure class="author-image sm-2 xs-4 xs-center sm-center md-center">
+    <figure class="author-image col-sm-2 col-xs-4 col-xs-center col-sm-center md-center">
         <img src="<?= THEME ?>/assets/img/user.png" width="100px" height="100px" class="hide-print img-circle profile-large">
     </figure>
     <section class="author">

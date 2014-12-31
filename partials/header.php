@@ -29,22 +29,15 @@
     _/      _/_/_/  _/    _/      _/_/    _/_/_/    _/_/_/  _/    _/_/_/
     ======================================================================-->
 
-    <?
-    theme::script('http://code.jquery.com/jquery-1.10.2.min.js', true);
-    theme::css('assets/css/bootstrap.css');
-    theme::css('assets/css/main.css');
-    theme::script('assets/js/hover.zoom.js');
-    theme::script('assets/js/hover.zoom.conf.js');
-    ?>
+    <? theme::css('assets/css/main.css'); ?>
 
     <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
-    <? theme::script('https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js', true); ?>
-    <? theme::script('https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js', true); ?>
+    <? theme::script('https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js'); ?>
+    <? theme::script('https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js'); ?>
     <![endif]-->
 
     <? render_header( ); ?>
-
 </head>
 
 <body <? body_class(); ?>>

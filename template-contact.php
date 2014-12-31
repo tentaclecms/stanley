@@ -3,17 +3,13 @@
 Name: Contact
 */
 
-theme::part('partials/header', array( 'title'=>'Contact'));
-
-theme::part('partials/hero') ?>
+theme::part('partials/header', array( 'title'=>'Contact')); ?>
 
 	<div class="container pt">
 
 		<div class="row mt">
 			<div class="lg-6 lg-offset-3 centered">
 				<h3>CONTACT ME</h3>
-				<hr>
-				<p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</p>
 			</div>
 		</div>
 
