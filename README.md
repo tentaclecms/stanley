@@ -3,6 +3,7 @@ Stanley
 
 
 ## Snippets to set:
+* hero_about
 * footer_about
 * footer_address
 

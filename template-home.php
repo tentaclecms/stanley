@@ -16,7 +16,10 @@ theme::part('partials/hero') ?>
 
     <div class="container m-top-60 instagram">
         <div class="row mt centered">
-            <? foreach ($post_meta->collection['blocks'] as $collection ):
+            <?
+            $blocks = array_reverse($post_meta->collection['blocks']);
+
+            foreach ($blocks as $collection ):
                 if ($collection['instagram'] != ''):
                     $url = $collection['instagram']; ?>
                 <div class="col-md-4">
