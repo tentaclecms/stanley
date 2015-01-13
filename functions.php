@@ -1,5 +1,12 @@
-<?
-//var_dump('test');
+<?php
+
+event::on('init_theme', 'init_theme', 1);
+function init_theme($theme){
+//    $snippets = load::model('snippets');
+//    $snippets->add_by_theme('hero_about','Hero About');
+//    $snippets->add_by_theme('footer_about','Footer Footer');
+//    $snippets->add_by_theme('footer_address','Footer Address');
+}
 
 function get_gravatar( $email, $s = 80, $d = 'mm', $r = 'g', $img = false, $atts = array() ) {
     $url = 'http://www.gravatar.com/avatar/';
