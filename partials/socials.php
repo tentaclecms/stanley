@@ -6,7 +6,8 @@
         <a href="http://www.reddit.com/submit?url=<?= HISTORY ?>&title=<?= $post->title?>" target="_blank" class="btn-share btn-reddit"> Reddit </a>
     </div>
     <div class="col-xs-2 twitter">
-        <a href="https://twitter.com/share?url=<?= HISTORY ?>&via=dayinspiration&text=<?= $post->title?>" onclick="javascript:window.open(this.href, '', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=300,width=600');return false;" target="_blank" title="Share on Twitter" class="btn-share btn-twitter"><i class="fa fa-twitter-square fa-fw"></i>Tweet</a>
+        <? /* &via=adampatterson */ ?>
+        <a href="https://twitter.com/share?url=<?= HISTORY ?>&text=<?= $post->title?>" onclick="javascript:window.open(this.href, '', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=300,width=600');return false;" target="_blank" title="Share on Twitter" class="btn-share btn-twitter"><i class="fa fa-twitter-square fa-fw"></i>Tweet</a>
     </div>
     <div class="col-xs-2 stumbleupon">
         <a href="http://www.stumbleupon.com/submit?url=<?= HISTORY ?>&title=<?= $post->title?>" onclick="javascript:window.open(this.href, '', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=450,width=450');return false;" class="btn-share btn-stumbleupon"><i class="fa fa-stumbleupon fa-fw"></i>Stumble</a>
