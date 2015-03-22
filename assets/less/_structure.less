@@ -1,6 +1,8 @@
 // Structural padding and margins
 @structure-loops: 150;
 @structure: 150px;
+@structure-count: 5;
+
 
 .calc-padding-type-structure(@index, @class, @structure) {
   .p-@{class}-@{index} {
@@ -29,13 +31,13 @@
 .loop-padding-structure(@index, @class, @structure) when (@index >= 0) {
   .calc-padding-type-structure(@index, @class, @structure);
   .calc-padding-structure(@index, @class, @structure);
-  .loop-padding-structure((@index - 15), @class, (@structure  - 15));
+  .loop-padding-structure((@index - @structure-count), @class, (@structure  - @structure-count));
 }
 
 .loop-margin-structure(@index, @class, @structure) when (@index >= 0) {
   .calc-margin-type-structure(@index, @class, @structure);
   .calc-margin-structure(@index, @class, @structure);
-  .loop-margin-structure((@index - 15), @class, (@structure  - 15));
+  .loop-margin-structure((@index - @structure-count), @class, (@structure  - @structure-count));
 }
 
 .make-structure(@class) {

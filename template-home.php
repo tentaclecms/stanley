@@ -23,11 +23,10 @@ theme::part('partials/hero') ?>
                 if ($collection['instagram'] != ''):
                     $url = $collection['instagram']; ?>
                 <div class="col-md-4">
-                    <?
-                        $o_image= oembed_content($url, true); ?>
-                        <a href="<?=$url?>" target="_blank">
-                            <img src="<?= $o_image->thumbnail_url ?>" alt="<?= $o_image->title ?>" class="m-bottom-15"/>
-                        </a>
+                    <? $o_image= oembed_content($url, true); ?>
+                    <a href="<?=$url?>" target="_blank">
+                        <img src="<?= $o_image->thumbnail_url ?>" alt="<?= $o_image->title ?>" class="m-bottom-15"/>
+                    </a>
                     <p>
                         <?= $o_image->title ?>
                     </p>
