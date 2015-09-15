@@ -44,3 +44,23 @@ function universal_ui( $id = null ){
 
     echo $hash_id;
 }
+
+function get_instagram_photo($contents){
+    $old_libxml_error = libxml_use_internal_errors(true);
+
+    $dom = new DOMDocument;
+
+    if(@$dom->loadHTML($contents) === false) {
+        throw new RuntimeException("Contents is empty");
+    }
+
+    libxml_use_internal_errors($old_libxml_error);
+
+    foreach($dom->getElementsByTagName('meta') as $tag) {
+        if ($tag->hasAttribute('property') && $tag->hasAttribute('content')) {
+            if($tag->getAttribute('property') == 'og:image')
+                return $tag->getAttribute('content');
+        }
+    }
+    unset($dom);
+}

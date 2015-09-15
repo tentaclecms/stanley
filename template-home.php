@@ -25,7 +25,11 @@ theme::part('partials/hero') ?>
                 <div class="col-md-4">
                     <? $o_image= oembed_content($url, true); ?>
                     <a href="<?=$url?>" target="_blank">
-                        <img src="<?= $o_image->thumbnail_url ?>" alt="<?= $o_image->title ?>" class="m-bottom-15"/>
+                        <? if(!isset($o_image->thumbnail_url)) { ?>
+                            <img src="<?= get_instagram_photo(file_get_contents($url)) ?>" alt="<?= $o_image->title ?>" class="m-bottom-15"/>
+                        <? } else { ?>
+                            <img src="<?= $o_image->thumbnail_url ?>" alt="<?= $o_image->title ?>" class="m-bottom-15"/>
+                        <? } ?>
                     </a>
                     <p>
                         <?= $o_image->title ?>
