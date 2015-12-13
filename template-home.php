@@ -22,7 +22,7 @@ theme::part('partials/hero') ?>
             foreach ($blocks as $collection ):
                 if ($collection['instagram'] != ''):
                     $url = $collection['instagram']; ?>
-                <div class="col-md-4">
+                <div class="col-md-4 col-sm-6">
                     <?
 
                     $o_image = oembed_content($url, true); ?>
