@@ -23,7 +23,9 @@ theme::part('partials/hero') ?>
                 if ($collection['instagram'] != ''):
                     $url = $collection['instagram']; ?>
                 <div class="col-md-4">
-                    <? $o_image= oembed_content($url, true); ?>
+                    <?
+
+                    $o_image = oembed_content($url, true); ?>
                     <a href="<?=$url?>" target="_blank">
                         <? if(!isset($o_image->thumbnail_url)) { ?>
                             <img src="<?= get_instagram_photo(file_get_contents($url)) ?>" alt="<?= $o_image->title ?>" class="m-bottom-15"/>

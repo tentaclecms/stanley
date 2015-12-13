@@ -1,15 +1,15 @@
 <?php
+load::helper( 'data_properties' );
 
-event::on('init_theme', 'init_theme', 1);
-function init_theme($theme){
-//    $snippets = load::model('snippets');
-//    $snippets->add_by_theme('hero_about','Hero About');
-//    $snippets->add_by_theme('footer_about','Footer Footer');
-//    $snippets->add_by_theme('footer_address','Footer Address');
+function init_theme(){
+    $snippets = new properties;
+    $snippets->snippet_model()->add_by_theme('hero_about','Hero About');
+    $snippets->snippet_model()->add_by_theme('footer_about','Footer Footer');
+    $snippets->snippet_model()->add_by_theme('footer_address','Footer Address');
 }
 
 function get_gravatar( $email, $s = 80, $d = 'mm', $r = 'g', $img = false, $atts = array() ) {
-    $url = 'http://www.gravatar.com/avatar/';
+    $url = '//www.gravatar.com/avatar/';
     $url .= md5( strtolower( trim( $email ) ) );
     $url .= "?s=$s&d=$d&r=$r";
     if ( $img ) {
@@ -46,21 +46,29 @@ function universal_ui( $id = null ){
 }
 
 function get_instagram_photo($contents){
-    $old_libxml_error = libxml_use_internal_errors(true);
+//    $cache = new cache();
+//
+//    if ( $cache->look_up('instagram') == false):
+//        // Set the data
+        $old_libxml_error = libxml_use_internal_errors(true);
 
-    $dom = new DOMDocument;
+        $dom = new DOMDocument;
 
-    if(@$dom->loadHTML($contents) === false) {
-        throw new RuntimeException("Contents is empty");
-    }
-
-    libxml_use_internal_errors($old_libxml_error);
-
-    foreach($dom->getElementsByTagName('meta') as $tag) {
-        if ($tag->hasAttribute('property') && $tag->hasAttribute('content')) {
-            if($tag->getAttribute('property') == 'og:image')
-                return $tag->getAttribute('content');
+        if(@$dom->loadHTML($contents) === false) {
+            throw new RuntimeException("Contents is empty");
         }
-    }
-    unset($dom);
+
+        libxml_use_internal_errors($old_libxml_error);
+
+        foreach($dom->getElementsByTagName('meta') as $tag) {
+            if ($tag->hasAttribute('property') && $tag->hasAttribute('content')) {
+                if($tag->getAttribute('property') == 'og:image')
+                    return $tag->getAttribute('content');
+            }
+        }
+        unset($dom);
+//    else:
+//        $cache_data = $cache->get('instagram');
+//        // Get the data
+//    endif;
 }

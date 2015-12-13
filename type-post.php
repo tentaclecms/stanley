@@ -4,7 +4,8 @@ Type: Post
 */
 
 theme::part('partials/header', array( 'title'=>'Contact', 'post'=>$post, 'post_meta'=> $post_meta));
-$author_meta = $author->get_meta( $post->author ); ?>
+$author_meta = $author->get_meta( $post->author );
+?>
 
 <div id="white">
 	<div class="container">
@@ -14,8 +15,9 @@ $author_meta = $author->get_meta( $post->author ); ?>
 				<h3><?= $post->title?></h3>
 				<?= the_content( $post->content ); ?>
 				<p><bt>
-					<? foreach( $relations = $tag->get_relations( $post->id ) as $relation ): ?>
-						<a href="<?=BASE_URL?>tag/<?=$relation->slug ?>">#<?= $relation->name ?></a>
+					<? 
+					foreach( $relations = $tag->get_relations( $post->id ) as $relation ): ?>
+						<a href="<?=BASE_URL_NO_PROTOCOL?>tag/<?=$relation->slug ?>">#<?= $relation->name ?></a>
 					<? endforeach; ?>
 				</bt></p>
 				<hr>
