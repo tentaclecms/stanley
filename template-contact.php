@@ -8,13 +8,13 @@ theme::part('partials/header', array( 'title'=>'Contact')); ?>
 	<div class="container pt">
 
 		<div class="row mt">
-			<div class="lg-6 lg-offset-3 centered">
+			<div class="col-md-6 col-md-offset-3 centered">
 				<h3>CONTACT ME</h3>
 			</div>
 		</div>
 
 		<div class="row mt">	
-			<div class="lg-8 lg-offset-2">
+			<div class="col-md-8 col-md-offset-2">
 				<form role="form">
 				  <div class="form-group">
 				    <input type="name" class="form-control" id="NameInputEmail1" placeholder="Your Name">

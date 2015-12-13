@@ -1,0 +1,63 @@
+{
+  "name": "go-auto",
+  "version": "0.0.1",
+  "description": "GoAuto.ca Release 3",
+  "main": "index.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "devDependencies": {
+    "babelify": "^6.0.2",
+    "browser-sync": "^2.10.0",
+    "browserify": "^9.0.7",
+    "chai": "^3.4.1",
+    "gulp": "^3.9.0",
+    "gulp-autoprefixer": "^2.3.1",
+    "gulp-babel": "^6.1.1",
+    "gulp-bless": "^3.0.1",
+    "gulp-changed": "latest",
+    "gulp-concat": "latest",
+    "gulp-cssmin": "latest",
+    "gulp-expect-file": "latest",
+    "gulp-filter": "latest",
+    "gulp-html-prettify": "latest",
+    "gulp-ignore": "latest",
+    "gulp-imagemin": "latest",
+    "gulp-less": "latest",
+    "gulp-load-plugins": "latest",
+    "gulp-minify-css": "latest",
+    "gulp-notify": "latest",
+    "gulp-plumber": "^1.0.0",
+    "gulp-rename": "latest",
+    "gulp-sass": "^2.1.0",
+    "gulp-sourcemaps": "latest",
+    "gulp-sync": "latest",
+    "gulp-uglify": "latest",
+    "gulp-util": "latest",
+    "gulp-watch": "latest",
+    "jquery": "^2.1.4",
+    "jsdom": "^7.1.0",
+    "mocha": "^2.3.4",
+    "mocha-jsdom": "^1.0.0",
+    "tiny-lr": "latest",
+    "vinyl-source-stream": "^1.1.0",
+    "laravel-elixir": "*"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/goauto/goauto-advanced.git"
+  },
+  "author": "Go Auto Marketing",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/goauto/goauto-advanced/issues"
+  },
+  "homepage": "https://www.goauto.ca/",
+  "dependencies": {
+    "react-tools": "^0.13.3",
+    "requirejs-babel": "0.0.8"
+  }
+}
