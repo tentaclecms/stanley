@@ -5,19 +5,19 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title><?= get::option('blogname').' - '. $title ?></title>
+    <title><?= get::option('blogname') . ' - ' . $title ?></title>
 
     <?
-    render_meta( );
-    render_description( );
-    render_keywords( );
-    render_cards( );
-    render_shortlink( );
+    render_meta();
+    render_description();
+    render_keywords();
+    render_cards();
+    render_shortlink();
     ?>
 
     <script type="text/javascript">
-        var base_theme      = '<?= THEME ?>';
-        var base_url        = '<?= BASE_URL ?>';
+        var base_theme = '<?= THEME ?>';
+        var base_url = '<?= BASE_URL ?>';
     </script>
 
     <!--
@@ -37,7 +37,7 @@
     <? theme::script('https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js'); ?>
     <![endif]-->
 
-    <? render_header( ); ?>
+    <? render_header(); ?>
 </head>
 
 <body <? body_class(); ?>>
